@@ -20,8 +20,8 @@ func fetch(client *http.Client, url string) {
 }
 
 func main() {
-    url := "http://localhost:8000/_healthcheck"
-    waitPeriod := 500 * time.Millisecond
+    url := "http://localhost:8000/"
+    waitPeriod := 500000 * time.Millisecond
  
 		tr := &http.Transport{
 			DisableKeepAlives:   false,
